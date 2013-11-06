@@ -1,0 +1,12 @@
+{
+    "name":"FirefoxApp",
+"description": "Aplicación para mostrar tu currículum de linkedIn de una manera más vistosa",
+		  "developer": {
+        "name":"Studeo Web",
+        "url":"http://www.studeoweb.com"
+		  }
+		,
+    "icons":{
+        "128":"http://www.studeoweb.com/icon.png"
+    }
+}
