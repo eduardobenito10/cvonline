@@ -147,7 +147,13 @@ $cv = cargarCV();
             <span class="degree">Data Analysis and Computing for Data Analysis</span>
             <a class="url org" href="http://www.coursera.org">Coursera</a>
           </li>-->
-		  <li class="education vevent">
+	  <li class="education vevent">
+            <div class="fecha"><abbr class="dtstart" title="2013-11-01">Noviembre 2013</abbr></div>
+            <span class="degree">Agilidad y Lean. Gestionando los proyectos y negocios del s. XXI</span>
+            <a class="url org" href="http://www.miriadax.net">MiriadaX</a>
+          </li>
+	
+	  <li class="education vevent">
             <div class="fecha"><abbr class="dtstart" title="2013-01-01">Enero 2013</abbr></div>
             <span class="degree">MongoDB for developers</span>
             <a class="url org" href="http://www.10gen.com">10Gen</a>
