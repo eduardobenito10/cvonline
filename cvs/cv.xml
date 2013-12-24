@@ -29,7 +29,7 @@ CMS: Drupal, Wordpress, Joomla.
 Otros: Android SDK</specialties>
   <interests>Correr, Android, Open Data, Metodologías Ágiles.</interests>
   <honors/>
-  <positions total="6">
+  <positions total="5">
     <position>
       <title>Programador Senior PHP</title>
       <summary></summary>
@@ -98,7 +98,8 @@ Diseño y programación de aplicaciones web utilizando el framework Yii para PHP
       <title>Dpto. Software</title>
       <summary>Realización del PFC “Aplicación de Trazabilidad en tiempo real de Interacciones Web”.
 Desarrollo de aplicaciones web utilizando PHP, mySql, jQuery.
-Aplicaciones para Facebook</summary>
+Aplicaciones para Facebook.
+Entre febrero de 2010 y mayo de 2010 (4 meses) realicé una estancia en Professional Development Center (Bratislava, Eslovaquia) como participante de las Becas Internacionales del Centro Nacional de Formación en Nuevas Tecnologías(THINKTIC).</summary>
       <start-date>
         <year>2009</year>
         <month>7</month>
@@ -116,26 +117,6 @@ Aplicaciones para Facebook</summary>
         <industry>Telecommunications</industry>
 		<place>Logroño, España</place>
         <url>http://www.knet.es</url>
-      </company>
-    </position>
-    <position>
-      <title>Desarrollador web</title>
-      <summary>Como participante de las Becas Internacionales del Centro Nacional de Formación en Nuevas Tecnologías(THINKTIC)
-Creación de una comunidad de usuarios usando la plataforma Kickapps y el CMS Wordpress</summary>
-      <start-date>
-        <year>2010</year>
-        <month>2</month>
-      </start-date>
-      <end-date>
-        <year>2010</year>
-        <month>5</month>
-      </end-date>
-      <is-current>false</is-current>
-      <company>
-        <name>Professional Development Center s.r.o.</name>
-        <industry>Information Technology and Services</industry>
-		<place>Bratislava, Slovakia</place>
-        <url>http://www.pdacenter.net</url>
       </company>
     </position>
     <position>

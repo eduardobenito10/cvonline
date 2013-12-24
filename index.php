@@ -15,4 +15,3 @@ $template = $twig->loadTemplate('index.twig.html');
 
 echo $template->render(array('education' => getEducation($cv), 'positions' => getPositions($cv), 'timeline' => getTimeline($cv), 'interests' => getInterests($cv)));
 
-?>
