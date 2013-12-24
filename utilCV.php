@@ -80,14 +80,7 @@ function getPositions($cv) {
 }
 
 function getInterests($cv) {
-  $render = '<div>';
-  /* <div>
-    <span>Correr</span>, <span>Fútbol</span>, <span>Android</span>, <span>Processing</span>, <span>Arduino</span>,
-    <span>Software libre</span>, <span>Open Data</span>, <span>Metodologías ágiles</span>.</li>
-    </div> */
-  $render .= $cv->interests;
-
-  $render .= '</div>';
+  $render = $cv->interests;
   return $render;
 }
 
