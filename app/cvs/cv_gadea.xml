@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person>
+  <honors/>
+  <positions total="2">
+    <position>
+      <title>Becaria Investigación</title>
+      <summary>Investigación y desarrollo de software en el tratamiento de imágenes biomédicas.</summary>
+      <start-date>
+        <year>2011</year>
+        <month>7</month>
+      </start-date>
+      <is-current>true</is-current>
+      <company>
+        <name>CIBIR</name>
+		<place>Logroño, España</place>
+        <url>http://www.cibir.es</url>
+      </company>
+    </position>
+    <position>
+      <title>Becaria Investigación</title>
+      <summary>Desarrollo e investigación en el procesamiento de imágenes digitales biomédicas.</summary>
+      <start-date>
+        <year>2011</year>
+        <month>1</month>
+      </start-date>
+      <end-date>
+        <year>2011</year>
+        <month>7</month>
+      </end-date>
+      <is-current>false</is-current>
+      <company>
+        <name>Universidad de La Rioja</name>
+		<place>Logroño, España</place>
+        <url>http://www.unirioja.es</url>
+      </company>
+    </position>
+  </positions>
+  <educations total="3">
+    <education>
+      <school-name>Universidad de La Rioja</school-name>
+      <degree>Doctorado</degree>
+	  <field-of-study>Programa Oficial de Doctorado en Ingeniería Eléctrica, Matemáticas y
+Computación</field-of-study>
+	  <start-date>
+            <year>2012</year>
+	  </start-date>
+      <end-date>
+        <year>2013</year>
+        <month>6</month></end-date>
+    <school-url>http://www.unirioja.es</school-url></education>
+    <education>
+      <school-name>Universidad de La Rioja</school-name>
+      <activities/>
+      <degree>Ingeniería Técnica</degree>
+      <field-of-study>Informática de Gestión</field-of-study>
+      <start-date>
+        <year>2003</year>
+      </start-date>
+      <end-date>
+        <year>2009</year>
+      </end-date>
+      <school-url>http://www.unirioja.es</school-url>
+    </education>
+    <education>
+      <school-name>Universidad de La Rioja</school-name>
+      <notes/>
+      <activities/>
+      <degree>Licenciatura</degree>
+      <field-of-study>Matemáticas</field-of-study>
+      <start-date>
+        <year>2003</year>
+      </start-date>
+      <end-date>
+        <year>2008</year>
+      </end-date>
+    <school-url>http://www.uned.es</school-url></education>
+  </educations>
+  <languages total="2">
+    <language>
+      <language>
+        <name>Español</name>
+      </language>
+      <proficiency>
+        <level>native_or_bilingual</level>
+      </proficiency>
+    </language>
+    <language>
+      <language>
+        <name>Inglés</name>
+      </language>
+      <proficiency>
+        <level>professional_working</level>
+      </proficiency>
+    </language>
+  </languages>
+</person>
