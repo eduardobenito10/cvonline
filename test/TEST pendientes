@@ -1,8 +1,0 @@
-TEST pendientes
-
-conectar con API
-comprobar datos
-crear cv.xml
-no crear si existe cv.xml
-leer cv.xml
-no leer si no existe
