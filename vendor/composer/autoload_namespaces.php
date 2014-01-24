@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'cvonline' => array($baseDir . '/'),
+    'Twig_Extensions_' => array($vendorDir . '/twig/extensions/lib'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
     'Symfony\\Component\\Yaml' => array($vendorDir . '/symfony/yaml'),
 );

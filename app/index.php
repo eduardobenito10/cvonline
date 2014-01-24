@@ -1,12 +1,23 @@
 <?php
-require_once '../vendor/twig/twig/lib/Twig/Autoloader.php';
+require_once '../vendor/autoload.php';
 Twig_Autoloader::register();
 
 $loader = new Twig_Loader_Filesystem('templates');
 $twig = new Twig_Environment($loader, array(
- //   'cache' => 'var/compilation_cache',
+   // 'cache' => '/tmp/cache',
     'debug' => 'true'
 ));
+
+// Set language to French
+putenv('LC_ALL=es_ES');
+setlocale(LC_ALL, 'es_ES');
+
+// Specify the location of the translation tables
+bindtextdomain('myAppPhp', 'includes/locale');
+bind_textdomain_codeset('myAppPhp', 'UTF-8');
+
+// Choose domain
+textdomain('myAppPhp');
 
 include_once('utilCV.php');
 $cv = cargarCV();
@@ -88,6 +99,7 @@ $languages = "
         </ul>
 ";
 
+$twig->addExtension(new Twig_Extensions_Extension_I18n());
 $template = $twig->loadTemplate('index.twig.html');
 
 echo $template->render(array(
