@@ -59,7 +59,11 @@
 	<h3 id="subtitle">{{subtitle}}</h3>
   </header>
   <div id="language">
-	<a href="en">English</a>
+	{% if lang == "es" %} 
+	<a href="?lang=en">English</a>
+	{% else %}
+	<a href="?lang=es">Español</a>
+	{% endif %}
   </div>
   <div class="nav-container">
 	<nav>
@@ -99,12 +103,12 @@
               <span itemprop="country-name" class="country-name"> {{country}}</span>
             </a>
           </address>
-          <span><small>EMAIL </small><a class="email" href="mailto:{{email}}">{{email}}</a></span>
+          <span><small>{{ "Mail"|trans|upper }} </small><a class="email" href="mailto:{{email}}">{{email}}</a></span>
 		  {% if web %}
-            <span><small>WEB </small><a class="url" href="http://{{web}}">{{web}}</a></span>
+            <span><small>{{ "Web"|trans|upper }} </small><a class="url" href="http://{{web}}">{{web}}</a></span>
 		  {% endif %}
-          <span><small>TELEFONO </small><span class="tel">{{phone}}</span></span>
-          <span><small>FECHA NACIMIENTO </small> <span>{{birthdate}}</span></span>
+          <span><small>{{ "Phone"|trans|upper }} </small><span class="tel">{{phone}}</span></span>
+          <span><small>{{ "Birth date"|trans|upper }} </small> <span>{{birthdate}}</span></span>
           <hr/>
           <div id="botones">
             <a href="http://www.twitter.com/{{twitter}}"><img src="images/icono_twitter.png" alt="Twitter"/></a>
@@ -117,7 +121,7 @@
       </aside>
 
       <section id="habilidades" class="tags">
-        <h2>Habilidades</h2>
+        <h2>{% trans "Skills" %}</h2>
 		{{skills | raw}}
       </section>
 
@@ -144,19 +148,19 @@
 	  {% endif %}
 
       <section id="timeline">
-        <h2>Timeline</h2>
+        <h2>{% trans "Timeline" %}</h2>
         <svg id="timeline" height="150" width="900" xmlns="http://www.w3.org/2000/svg">
         {{ timeline | raw }}
         </svg>
       </section>
 
       <section id="idiomas">
-        <h2>Idiomas</h2>
+        <h2>{% trans "Languages" %}</h2>
 		{{languages | raw}}
       </section>
 
       <section id="interests">
-        <h2>Intereses</h2>
+        <h2>{% trans "Interests" %}</h2>
         <div>{{ interests }}</div>
       </section>
 
@@ -183,6 +187,5 @@
           duration : 100});
       });
     </script>
-{% trans "Hello" %}
   </body>
 </html>

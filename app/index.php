@@ -8,48 +8,15 @@ $twig = new Twig_Environment($loader, array(
     'debug' => 'true'
 ));
 
-// Set language to Spanish
-putenv('LC_ALL=es');
-putenv('LANG=es');
-setlocale(LC_ALL, 'es');
-
-// Specify the location of the translation tables
-bindtextdomain('messages', 'includes/locale');
-//bind_textdomain_codeset('messages', 'UTF-8');
-
-// Choose domain
-textdomain('messages');
-
-// The .mo file searched is: 
-// ./locale/es/LC_MESSAGES/mydomain.mo 
-
-echo gettext("Hello"); 
-gettext('Hello');
-$hello1 = gettext('Hello');
-
-putenv('LC_ALL=es_ES');
-setlocale(LC_ALL, 'es_ES');
-
-// Specify the location of the translation tables
-bindtextdomain('messages', 'includes/locale');
-//bind_textdomain_codeset('messages', 'UTF-8');
-
-// Choose domain
-textdomain('messages');
-$hello2 = gettext('Hello');
-
 putenv('LC_ALL=es_ES.utf8');
 setlocale(LC_ALL, 'es_ES.utf8');
 
 // Specify the location of the translation tables
 bindtextdomain('messages', 'includes/locale');
-//bind_textdomain_codeset('messages', 'UTF-8');
+bind_textdomain_codeset('messages', 'UTF-8');
 
 // Choose domain
 textdomain('messages');
-$hello3 = gettext('Hello');
-
-echo $hello1. $hello2 . $hello3;
 
 include_once('utilCV.php');
 $cv = cargarCV();
@@ -135,6 +102,7 @@ $twig->addExtension(new Twig_Extensions_Extension_I18n());
 $template = $twig->loadTemplate('index.twig.html');
 
 echo $template->render(array(
+	'lang' => 'es',
 	'title' => 'Eduardo Benito. Programador web, PHP, HTML5, CSS3',
 	'description' => 'CV Eduardo Benito Díez,programador web,php,html5,css3,jquery,android,scrum',
 	'name' => 'Eduardo Benito Díez',

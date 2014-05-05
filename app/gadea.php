@@ -1,17 +1,25 @@
 <?php
-require_once '../vendor/twig/twig/lib/Twig/Autoloader.php';
+require_once '../vendor/autoload.php';
 Twig_Autoloader::register();
 
 $loader = new Twig_Loader_Filesystem('templates');
 $twig = new Twig_Environment($loader, array(
- //   'cache' => 'var/compilation_cache',
+   // 'cache' => '/tmp/cache',
     'debug' => 'true'
 ));
 
+putenv('LC_ALL=es_ES.utf8');
+setlocale(LC_ALL, 'es_ES.utf8');
+
+// Specify the location of the translation tables
+bindtextdomain('messages', 'includes/locale');
+bind_textdomain_codeset('messages', 'UTF-8');
+
+// Choose domain
+textdomain('messages');
+
 include_once('utilCV.php');
 $cv = cargarCV('cvs/cv_gadea.xml');
-
-$template = $twig->loadTemplate('index.twig.html');
 
 $skills = '<span class="skill">Java</span>, <span class="skill">ImageJ</span>, <span class="skill">Digital Image Processing</span>, <span class="skill">Mathematica</span>, <span class="skill">Matlab</span>, <span class="skill">NetBeans</span>, <span class="skill">Photoshop</span>, <span class="skill">GIMP</span>, <span class="skill">Microsoft Office</skill>';
 
@@ -78,6 +86,9 @@ $docencia = '
 				<a class="url org" href="http://www.unirioja.es/">Universidad de La Rioja</a>
 			</li>
 </ul>';
+
+$twig->addExtension(new Twig_Extensions_Extension_I18n());
+$template = $twig->loadTemplate('index.twig.html');
 
 echo $template->render(array(
 'title' => 'Gadea Mata Martínez',

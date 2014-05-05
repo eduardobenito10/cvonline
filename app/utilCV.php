@@ -99,7 +99,7 @@ function getTimeline($cv) {
     if ((int) $position->{'start-date'}->year < $start_year || $start_year == 0) {
       $start_year = $position->{'start-date'}->year;
     }
-    //aif ((int) $position->{'end-date'}->year > $end_year) {
+    //if ((int) $position->{'end-date'}->year > $end_year) {
       //$end_year = $position->{'end-date'}->year;
     //}
   }
@@ -112,8 +112,8 @@ function getTimeline($cv) {
     //}
   }
   $total_time = $end_year - $start_year;
-  $x_year = 800 / $total_time;
-  $x_month = $x_year / 12;
+  $x_year = round(800 / $total_time);
+  $x_month = round($x_year / 12);
 
   $render = "";
   $y = "90";
@@ -129,8 +129,7 @@ function getTimeline($cv) {
     $line_points .= ($x + 1) . ',' . ($y + 5) . ' ';
     $line_points .= ($x + 1) . ',' . $y . ' ';
   }
-  $render .= '<polyline fill="none" style="stroke:rgb(0,0,0);stroke-width:2" 
-            points="' . $line_points . '"/>';
+  $render .= '<polyline fill="none" style="stroke:rgb(0,0,0);stroke-width:2" points="' . $line_points . '"/>';
 
   $last_end_date = array("year" => 0, "month" => 0);
 
